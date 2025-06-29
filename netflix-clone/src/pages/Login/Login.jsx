@@ -3,6 +3,7 @@ import "./Login.css";
 import logo from "../../assets/logo.png";
 import { login, signup } from "../../Firebase";
 import netflix_spinner from "../../assets/netflix_spinner.gif";
+import { FaRegEyeSlash, FaRegEye } from "react-icons/fa";
 
 const Login = () => {
   const [signState, setSignState] = useState("Sign In");
@@ -11,6 +12,7 @@ const Login = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false); //for showing password
 
   // Loading animation state
 
@@ -60,14 +62,20 @@ const Login = () => {
               setEmail(e.target.value);
             }}
           />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => {
-              setPassword(e.target.value);
-            }}
-          />
+          <div className="password-wrapper">
+            <input
+              type={showPassword ? "text" : "password"}
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <span
+              className="password-toggle"
+              onClick={() => setShowPassword(!showPassword)}
+            >
+              {showPassword ? <FaRegEyeSlash /> : <FaRegEye />}
+            </span>
+          </div>
           <button type="submit" onClick={user_auth}>
             {signState}
           </button>

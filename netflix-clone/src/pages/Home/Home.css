@@ -4,6 +4,7 @@
 
 .banner-img{
     width: 100%;
+    
     mask-image: linear-gradient(to right, transparent, black 75%);
     -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
 }
@@ -12,10 +13,11 @@
     width: 100%;
     padding-left: 6%;
     bottom: 0;
-
+   background:linear-gradient(to right, transparent, black 200%);
+   border-radius: 20px;
 }
 
-.caption-img{
+.popular-title{
     width: 90%;
     max-width: 420px;
     margin-bottom: 30px;
@@ -87,7 +89,7 @@
     .hero-caption{
         padding-left: 4%;
     }
-    .caption-img{
+    .popular-title{
         margin-bottom: 10px;
         width: 40%;
     }
@@ -105,7 +107,7 @@
 }
 
 @media (max-width:500px) {
-    .caption-img{
+    .popular-title{
         display: none;
     }
     .btn img{
@@ -160,7 +162,7 @@
 
 
 /* Default (desktop) */
-.caption-img {
+.popular-title {
    width: 60vw;
     max-width: 180px;
     margin-bottom: 10px;
@@ -168,7 +170,7 @@
 
 /* Tablet */
 @media (max-width: 800px) {
-    .caption-img {
+    .popular-title {
         width: 60%;
         max-width: 250px;
         margin-bottom: 15px;
@@ -177,7 +179,7 @@
 
 /* Small tablet/large phone */
 @media (max-width: 600px) {
-    .caption-img {
+    .popular-title {
         width: 80%;
         max-width: 180px;
         margin-bottom: 10px;
@@ -189,9 +191,30 @@
 
 /* Mobile: Hide image */
 @media (max-width: 500px) {
-    .caption-img {
+    .popular-title{
         display: none;
     }
+}
+
+.hero-caption p {
+  max-height: 80px;
+  overflow: hidden;
+  transition: max-height 0.3s;
+}
+
+.hero-caption.show-full p {
+  max-height: 300px; /* or whatever fits your design */
+  overflow-y: auto;
+}
+
+.overview-small {
+  font-size: 0.9rem; /* or 14px, adjust as needed */
+  line-height: 1;
+  font-family: "Outfit  ";
+  background: linear-gradient(rgba(0,0,0,0.7) 100%, transparent 100%);
+  border-radius: 10px;
+   padding: 10px;
+
 }
 
 

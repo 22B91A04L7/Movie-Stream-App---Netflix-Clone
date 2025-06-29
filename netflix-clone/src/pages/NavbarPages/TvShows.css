@@ -1,0 +1,87 @@
+.tv-shows-page {
+  color: #fff;
+  padding: 40px 20px;
+  min-height: 100vh;
+  background: #000;
+  margin-top: 50px;
+
+}
+.loading-logo{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tv-shows-page h2 {
+  margin-bottom: 24px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.tv-shows-loading {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 32px 0;
+}
+
+.tvshows-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.tvshow-card {
+  background: #181818;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  transition: transform 0.2s;
+    text-decoration: none;
+  color: inherit;
+}
+
+.tvshow-card:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+.tvshow-poster {
+  width: 100%;
+  max-width: 220px;
+  min-height: 330px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  background: #222;
+
+}
+
+.tvshow-info {
+  width: 100%;
+  text-align: center;
+
+}
+
+.tvshow-info h3 {
+   margin: 0 0 8px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgb(94, 5, 99);; /* Set underline color to white */
+  color: rgb(127, 7, 133); /* Set text color to white */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+.tvshow-date {
+  font-size: 0.95rem;
+  color: #bbb;
+  margin-bottom: 8px;
+}

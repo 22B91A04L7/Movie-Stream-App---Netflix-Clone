@@ -6,6 +6,10 @@ import Player from "./pages/Player/Player";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./Firebase";
 import { ToastContainer, toast } from "react-toastify";
+import SearchResults from "./pages/Searched/SearchResults";
+import TvShows from "./pages/NavbarPages/TvShows";
+import MoviesList from "./pages/NavbarPages/MoviesList";
+import Popular from "./pages/NavbarPages/Popular";
 
 const App = () => {
   // Login and LogOut Pages Redirecting
@@ -28,7 +32,11 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/player/:id" element={<Player />} />
+        <Route path="/player/:media_type/:id" element={<Player />} />
+        <Route path="/search" element={<SearchResults />} />
+        <Route path="/tv-shows" element={<TvShows />} />
+        <Route path="/movies-list" element={<MoviesList />} />
+        <Route path="/popular-movies" element={<Popular />} />
       </Routes>
     </div>
   );

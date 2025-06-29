@@ -28,7 +28,7 @@ const signup = async (name,email, password) =>
    const user = res.user;
     //  Storing SignUp details in Firebase
    await addDoc(collection(db, "user"),{
-    udi: user.uid,
+    uid: user.uid,
     name,
     authProvider : "local",
     email,
@@ -47,8 +47,13 @@ const login = async (email, password) =>{
 try {
    await signInWithEmailAndPassword(auth, email, password);
 } catch (error) {
-  console.log(error);
+  // console.log(error);
+  if(error === "auth/invalid-credential"){
     toast.error(error.code.split('/')[1].split('-').join(" "));
+  }
+    else{
+       toast.error("User Not Registered");
+    }
   
 }
 }

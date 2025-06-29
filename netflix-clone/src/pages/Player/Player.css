@@ -4,18 +4,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 
 .player img{
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    position:fixed;
+    top: 70px;
+    left: 10px;
     width: 50px;
     cursor: pointer;
 }
 
 .player iframe{
     border-radius: 10px;
+    margin-top:10px ;
 }
 
 .player-info{
@@ -23,4 +25,11 @@
     align-items: center;
     justify-content: space-between;
     width: 90%;
+}
+
+.description {
+  width: 90%;
+  max-width: auto; 
+  margin: auto auto 0 auto;
+  color: #fff;
 }
