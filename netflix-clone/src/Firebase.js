@@ -2,14 +2,14 @@ import { initializeApp } from "firebase/app";
 import {createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword, signOut} from 'firebase/auth'
 import {addDoc, collection, getFirestore} from 'firebase/firestore'
 import { toast } from "react-toastify";
+
 const firebaseConfig = {
-  apiKey: "AIzaSyDEebLFFu2eT-4r-bCh4d_DQe8-fQsVnOM",
-  authDomain: "netflix-clone-ef2d5.firebaseapp.com",
-  projectId: "netflix-clone-ef2d5",
-  storageBucket: "netflix-clone-ef2d5.firebasestorage.app",
-  messagingSenderId: "156933430731",
-  appId: "1:156933430731:web:b669a99ecbf840ab7bea4e",
-  measurementId: "G-G1D8NQ1715"
+  apiKey: "AIzaSyAqeIlGBMn1gK-IZbb4H2f9294vgM8yPPo",
+  authDomain: "movie-stream-clone-49325.firebaseapp.com",
+  projectId: "movie-stream-clone-49325",
+  storageBucket: "movie-stream-clone-49325.firebasestorage.app",
+  messagingSenderId: "447951059219",
+  appId: "1:447951059219:web:a92cad484521b187b842e6"
 };
 
 // Initialize Firebase
