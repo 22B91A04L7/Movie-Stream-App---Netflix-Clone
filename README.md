@@ -5,7 +5,7 @@ A **Netflix-inspired movie streaming clone** built with **React (Vite) + Firebas
 ---
 ## 🚀 Live Demo
 
-🌐 https://moviestream-clone.web.app/
+🌐 https://moviestream-clone-50f6f.web.app/
 
 ---
 
