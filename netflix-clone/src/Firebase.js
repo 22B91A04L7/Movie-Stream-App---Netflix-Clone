@@ -65,22 +65,5 @@ const logout = () => {
   signOut(auth);
 }
 
-// Delete User
-const deleteUser = async (user) => {
-  try {
-    // Delete user from Firebase Authentication
-    await auth.currentUser.delete();
 
-    // Delete user document from Firestore
-    const userDoc = collection(db, "user");
-    const querySnapshot = await userDoc.where("uid", "==", user.uid).get();
-    for (const docSnap of querySnapshot.docs) {
-      await docSnap.ref.delete();
-    }
-  } catch (error) {
-    console.error("Error deleting user: ", error);
-    toast.error("Error deleting user: ", error.message);
-  }
-};
-
-export {auth, db, login, signup, logout, deleteUser};
+export {auth, db, login, signup, logout};
