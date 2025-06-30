@@ -55,7 +55,7 @@ const TitleCard = ({ title, category, data }) => {
 
   return (
     <div className="titlecards">
-      <h2>{title ? title : "Popular on Netflix"}</h2>
+      <h2>{title ? title : "Popular on Movie Stream"}</h2>
       <div className="card-list" ref={cardsRef}>
         {ApiData.filter(
           (card) => card.media_type !== "person" && card.backdrop_path

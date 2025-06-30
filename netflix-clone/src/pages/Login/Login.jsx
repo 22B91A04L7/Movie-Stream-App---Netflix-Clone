@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Login.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/login_logo.png";
 import { login, signup } from "../../Firebase";
 import netflix_spinner from "../../assets/netflix_spinner.gif";
 import { FaRegEyeSlash, FaRegEye } from "react-icons/fa";
@@ -94,7 +94,7 @@ const Login = () => {
                 setSignState("Sign Up");
               }}
             >
-              New to Netflix? <span>Sign Up Now</span>
+              New to Movie Stream? <span>Sign Up Now</span>
             </p>
           ) : (
             <></>

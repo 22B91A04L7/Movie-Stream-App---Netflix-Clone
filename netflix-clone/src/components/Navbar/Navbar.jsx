@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/login_logo.png";
 import searchIcon from "../../assets/search_icon.svg";
 import bellIcon from "../../assets/bell_icon.svg";
 import profile_img from "../../assets/profile_img.png";
@@ -53,7 +53,7 @@ const Navbar = () => {
   return (
     <div className={`navbar${scrolled ? " navbar-scrolled" : ""}`}>
       <div className="navbar-left">
-        <img onClick={() => navigate("/")} src={logo} alt="" />
+        <img onClick={() => navigate("/")} src={logo} style={{}} alt="" />
         <ul>
           <li onClick={() => navigate("/")}>Home</li>
           <li onClick={() => navigate("/tv-shows")}>TV Shows</li>

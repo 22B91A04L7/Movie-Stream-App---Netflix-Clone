@@ -86,7 +86,7 @@ const Hero = () => {
         <br />
         <TitleCard title={"BlockBuster Movies"} category={"top_rated"} />
         <br />
-        <TitleCard title={"Only on Netflix"} category={"popular"} />
+        <TitleCard title={"Only on Movie Stream"} category={"popular"} />
         <br />
         <TitleCard title={"Upcoming Movies"} category={"upcoming"} />
         <br />

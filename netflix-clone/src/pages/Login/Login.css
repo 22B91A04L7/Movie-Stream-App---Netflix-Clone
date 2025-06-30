@@ -5,9 +5,10 @@
     justify-content: center;
 }
 
-.logo{
-    width: 100px;
-  
+.login-logo{
+    height: 80px;
+    border-radius: 10px;
+   
 }
 
 .login-form{
@@ -23,8 +24,7 @@
 .login-form h2{
     font-size: 32px;
     font-weight: 500;
-    /* margin-top: -10px; */
-    /* margin-bottom: 10px; */
+
 }
 
 .login-form input{
@@ -83,7 +83,9 @@
     margin-top: 15px;
     color: #737373;
     display: flex;
-    justify-content: center;
+    justify-content:space-evenly;
+   
+    
 }
 
 .form-switch span{
@@ -91,6 +93,8 @@
     color: #fff;
     font-weight: 500;
     cursor: pointer;
+   
+   
 }
 
 .loading-logo{
