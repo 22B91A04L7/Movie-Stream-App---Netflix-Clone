@@ -4,12 +4,12 @@ import {addDoc, collection, getFirestore, deleteDoc} from 'firebase/firestore'
 import { toast } from "react-toastify";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD4rzpM9rg-NhlM5Kn2WvEJF1h4oCI5f_s",
-  authDomain: "moviestream-clone.firebaseapp.com",
-  projectId: "moviestream-clone",
-  storageBucket: "moviestream-clone.firebasestorage.app",
-  messagingSenderId: "484138096705",
-  appId: "1:484138096705:web:60fc5f8e3390be9c0f4ec0"
+  apiKey: "AIzaSyAY-ZgaC9AvoqdLkQUxE_z-MeqlLdyXQc0",
+  authDomain: "moviestream-clone-50f6f.firebaseapp.com",
+  projectId: "moviestream-clone-50f6f",
+  storageBucket: "moviestream-clone-50f6f.firebasestorage.app",
+  messagingSenderId: "950048620504",
+  appId: "1:950048620504:web:3f3d07e6797fa5dc0bbcad"
 };
 
 // Initialize Firebase
