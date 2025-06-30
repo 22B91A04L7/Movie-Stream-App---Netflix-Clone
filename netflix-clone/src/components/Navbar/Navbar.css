@@ -146,3 +146,41 @@ background-color: rgba(0, 0, 0, 0.5);
   border: none;
   outline: none;
 }
+
+/* Hide user name on small screens */
+@media (max-width: 600px) {
+  .navbar-right p {
+    display: none;
+  }
+}
+
+/* Optional: Stack navbar items vertically on very small screens */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    height: 56px;
+    padding: 0 8px;
+  }
+  .navbar-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-left img {
+    height: 36px;
+    margin-right: 10px;
+    margin-left: 0;
+    border-radius: 6px;
+  }
+  .navbar-left ul {
+    display: none;
+  }
+  .navbar-right {
+    gap: 8px;
+  }
+  .navbar-right p {
+    display: none;
+  }
+}

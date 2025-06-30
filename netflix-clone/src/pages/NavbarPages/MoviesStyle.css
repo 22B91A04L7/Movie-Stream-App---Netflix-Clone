@@ -34,6 +34,7 @@
   align-items: center;
   padding: 10px;
   transition: transform 0.2s;
+  text-decoration: none;
 }
 
 .movie-card:hover {
@@ -56,6 +57,10 @@
   margin: 0 0 8px 0;
   font-size: 1.1rem;
   font-weight: 600;
+   text-decoration-color: rgb(94, 5, 99);; /* Set underline color to white */
+  color: rgb(127, 7, 133); /* Set text color to white */
+  text-decoration: underline;
+
 }
 .loading-logo{
     width: 100%;
@@ -74,4 +79,35 @@
 .movie-overview {
   font-size: 0.98rem;
   color: #ccc;
+}
+
+@media (max-width: 1024px) {
+  .movies-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .movies-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  .movies-list-page {
+    padding: 20px 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .movies-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .movie-poster {
+    max-width: 100%;
+    min-height: 200px;
+  }
+  .movies-list-page h2 {
+    font-size: 1.3rem;
+  }
 }

@@ -85,3 +85,34 @@
   color: #bbb;
   margin-bottom: 8px;
 }
+
+@media (max-width: 1024px) {
+  .tvshows-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tvshows-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  .tv-shows-page {
+    padding: 20px 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .tvshows-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .tvshow-poster {
+    max-width: 100%;
+    min-height: 200px;
+  }
+  .tv-shows-page h2 {
+    font-size: 1.3rem;
+  }
+}

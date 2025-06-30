@@ -37,6 +37,8 @@ const Login = () => {
   ) : (
     <div className="login">
       <img src={logo} className="login-logo" alt="" />
+      <br />
+      <br />
       <div className="login-form">
         <h2>{signState}</h2>
         <form>

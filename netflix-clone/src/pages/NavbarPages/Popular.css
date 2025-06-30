@@ -10,6 +10,7 @@
   margin-bottom: 24px;
   font-size: 2rem;
   font-weight: 700;
+ 
 }
 
 .popular-loading {
@@ -34,6 +35,8 @@
   align-items: center;
   padding: 10px;
   transition: transform 0.2s;
+  text-decoration: none;
+
 }
 
 .popular-card:hover {
@@ -53,6 +56,8 @@
 .popular-info {
   width: 100%;
   text-align: center;
+   text-decoration-color: rgb(94, 5, 99);; /* Set underline color to white */
+  color: rgb(127, 7, 133); /* Set text color to white */
 }
 
 .popular-info h3 {
@@ -62,6 +67,10 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+   text-decoration-color: rgb(94, 5, 99);; /* Set underline color to white */
+  color: rgb(127, 7, 133); /* Set text color to white */
+    text-decoration: underline;
+
 }
 .loading-logo{
     width: 100%;
@@ -75,4 +84,35 @@
   font-size: 0.95rem;
   color: #bbb;
   margin-bottom: 8px;
+}
+
+@media (max-width: 1024px) {
+  .popular-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .popular-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  .popular-page {
+    padding: 20px 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .popular-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .popular-poster {
+    max-width: 100%;
+    min-height: 200px;
+  }
+  .popular-page h2 {
+    font-size: 1.3rem;
+  }
 }

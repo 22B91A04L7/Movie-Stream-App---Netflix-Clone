@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import {createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword, signOut} from 'firebase/auth'
-import {addDoc, collection, getFirestore} from 'firebase/firestore'
+import {addDoc, collection, getFirestore, deleteDoc} from 'firebase/firestore'
 import { toast } from "react-toastify";
 
 const firebaseConfig = {
@@ -65,5 +65,22 @@ const logout = () => {
   signOut(auth);
 }
 
+// Delete User
+const deleteUser = async (user) => {
+  try {
+    // Delete user from Firebase Authentication
+    await auth.currentUser.delete();
 
-export {auth, db, login, signup, logout};
+    // Delete user document from Firestore
+    const userDoc = collection(db, "user");
+    const querySnapshot = await userDoc.where("uid", "==", user.uid).get();
+    for (const docSnap of querySnapshot.docs) {
+      await docSnap.ref.delete();
+    }
+  } catch (error) {
+    console.error("Error deleting user: ", error);
+    toast.error("Error deleting user: ", error.message);
+  }
+};
+
+export {auth, db, login, signup, logout, deleteUser};

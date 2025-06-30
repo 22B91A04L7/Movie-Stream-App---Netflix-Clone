@@ -27,3 +27,38 @@
     color: gray;
     font-size: 14px;
 }
+
+@media (max-width: 900px) {
+  .footer {
+    max-width: 100%;
+    padding: 30px 2%;
+  }
+  .footer ul {
+    grid-template-columns: auto auto;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 20px 2%;
+  }
+  .footer-icons {
+    gap: 12px;
+    margin: 24px 0;
+    justify-content: center;
+  }
+  .footer ul {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-items: start;
+    padding-left: 0;
+  }
+  .footer ul li {
+    font-size: 15px;
+  }
+  .copyright-text {
+    font-size: 12px;
+    text-align: center;
+  }
+}

@@ -109,23 +109,46 @@
     width: 60px;
 }
 
-@media (max-width:500px) {
-    .login{
-        padding: 5px;
-    }
-    .login-form{
-        padding: 20px;
-        margin-top: 30px;
-    }
-}
-
-
-@media (max-width: 350px) {
+@media (max-width: 800px) {
   .login-form {
-    padding: 10px;
+    max-width: 90vw;
+    padding: 30px;
+  }
+  .login-logo {
+    height: 60px;
   }
 }
 
+@media (max-width: 500px) {
+  .login {
+    padding: 5px;
+  }
+  .login-form {
+    padding: 15px;
+    margin-top: 20px;
+    max-width: 98vw;
+  }
+  .login-form h2 {
+    font-size: 24px;
+  }
+  .login-logo {
+    height: 40px;
+  }
+  .form-help {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 350px) {
+  .login-form {
+    padding: 5px;
+  }
+  .login-form h2 {
+    font-size: 18px;
+  }
+}
 
 .password-wrapper {
   position: relative;
