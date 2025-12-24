@@ -1,4 +1,5 @@
 # 🎬 Netflix Clone
+🔗 Live Demo: https://moviestream-b3aac.web.app/
 
 
 ![image](https://github.com/user-attachments/assets/9e4642fa-fe96-483b-9790-cbf3f7e17ef4)
